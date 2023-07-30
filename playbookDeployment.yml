@@ -3,7 +3,7 @@
   become: true
   tasks:
   - name: clone the repo with java code on every worker node
-    git: repo=https://github.com/Sonal0409/DevOpsCodeDemo.git dest=/tmp/devopscode-repo
+    git: repo=https://github.com/kavita98/Shraddha-CourseEndProject-1AnsibleJenkins.git dest=/tmp/devopscode-repo
   - name: Maven to build the code
     command: chdir=/tmp/devopscode-repo mvn package
   - name: From target folder copy the addressbook.war in current directory
